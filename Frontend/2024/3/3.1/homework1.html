@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="file" multiple onchange="choosefile()">
+    <br>
+    <textarea id="text" cols="100" rows="50"></textarea>
+
+    <script>
+        
+        function choosefile(){
+            var file = document.getElementById('file').files;
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = (e) => {
+                var content = e.target.result;
+                alert(content);
+                document.getElementById('text').value = content;
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

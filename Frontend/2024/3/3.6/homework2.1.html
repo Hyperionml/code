@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <button id="setData">设置数据</button>
+    <button id="getData">获取数据</button>
+    <button id="delData">删除数据</button>
+
+    <script>
+        var username = document.getElementById('username');
+
+        document.getElementById('setData').onclick = () => {
+            var val = username.value;
+            window.sessionStorage.setItem('username', val);
+        }
+
+        document.getElementById('getData').onclick = () => {
+            alert(window.sessionStorage.getItem('username'));
+        }
+
+        document.getElementById('delData').onclick = () => {
+            window.sessionStorage.removeItem('username');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,img,video{margin: 0;border: 0;list-style: none;outline: none;}
+body{font-family: "微软雅黑", Arial, Helvetica, sans-serif; font-size: 14px; background: #282828;}
+a{color: #333;text-decoration: none;}
+@font-face {
+    font-family: 'freshskin';
+    src: url('fonts/iconfont.ttf');
+}
+
+#head{
+    width: 100%;
+    height: 46px;
+    background: #0A2536;
+}
+#head .con{
+    width: 1200px;
+    margin: 0 auto;
+}
+#head .con .left{float: left;}
+#head .con .right{float: right;}
+#head .con .left li{
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    margin-right: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+#head .con .right li{
+    float: right;
+    height: 46px;
+    line-height: 46px;
+    margin-left: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+#head .con .right li a{color: #fff;}
+
+
+#nav{
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+#nav .nav_in{
+    width: 1200px;
+    margin: 0 auto;
+}
+#nav ul{float: left;}
+#nav ul li{
+    float: left;
+    margin-right: 50px;
+    font-size: 18px;
+    height: 55px;
+    line-height: 55px;
+}
+#nav .nav_in ol{
+    float: right;
+    width: 300px;
+    height: 55px;
+    font-family: "freshskin";
+}
+#nav .nav_in ol li{
+    float: left;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 0 0 1px #333 inset;
+    transition: box-shadow 0.5s ease 0s;
+    border-radius: 16px;
+    margin: 10px 0 0 30px;
+    cursor: pointer;
+}
+#nav .nav_in lo li:hover{
+    box-shadow: 0 0 0 16px #fff inset;
+    color: #333;
+}
+#nav img{
+    margin-top: 15px;
+}
+
+
+#banner{
+    width: 1125px;
+    margin: 0 auto;
+    transform: translate(0,70px);
+    color: #fff;
+}
+video{
+    width: 1165px;
+}
+#banner .ban_foot{
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 1100px;    
+}
+#banner .ban_foot img{
+    vertical-align: middle;
+}
+#banner .ban_foot .left{
+    float: right;
+    transform: translate(50px,0);
+}
+#banner .ban_foot a span{
+    color: #fff;
+}
+
+
+#body{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    overflow: hidden;
+    transform: translate(35px,0);
+}
+
+
+#vd{
+    padding-top: 65px;
+    margin: 0 auto;
+    width: 910px;
+    float: left;
+}
+#vd span,#talking span,.left span{
+    display: block;
+    padding: 10px 0;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 14px;
+}
+#vd .i8{
+    display: inline-block;
+    background: url(images/pic08.jpg) center 2.5px no-repeat;
+}
+#vd .i9{
+    display: inline-block;
+    background: url(images/pic09.jpg) center 2.5px  no-repeat;
+}
+#vd .i10{
+    display: inline-block;
+    background: url(images/pic10.jpg) center 2.5px no-repeat;
+}
+#vd .i11{
+    display: inline-block;
+    background: url(images/pic11.jpg) center 2.5px no-repeat;
+}
+#vd div a img{
+    transition: all 0.5s ease-in 0s;
+    opacity: 1;
+}
+#vd div a:hover img{
+    transform: rotate(720deg);
+    opacity: 0;
+}
+
+#vd img{
+    padding: 3px;
+}
+
+#talking{
+    float: left;
+}
+#talking .tal_body{
+    background: #fff;
+    width: 906px;
+    height: 375px;
+}
+#talking textarea{
+    transform: translate(50px, 25px);
+    border: 1px solid #aaa;
+    color: #aaa;
+}
+#talking .btn{
+    width: 85px;
+    height: 30px;
+    background: #2fade7;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    transform: translate(780px, -60px);
+    z-index: 999;
+}
+
+
+#body .left{
+    width: 250px;
+    float: right;
+    transform: translate(-35px, -490px);
+    color: #aaa;
+}
+#body .left h3{
+    text-align: center;
+}
+#body .left .one .txt{
+    padding: 25px;
+    background: #fff;
+}
+#body .left .one .txt .one_body{
+    font-size: 12px;
+}
+#body .left .one .txt .one_foot{
+    color: #2fade7;
+    text-align: right;
+    font-size: 14px;
+    transform: translate(0,10px);
+}
+
+
+#footer{
+    width: 100%;
+    height: 127px;
+    margin-top: 35px;
+    background: #0A2536;
+    color: #fff;
+    text-align: center;
+}
+#footer .foot{
+    width: 1200px;
+    height: 127px;
+    margin: 0 auto;
+    position: relative;
+}
+#footer span{
+    width: 58px;
+    height: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -31px;
+    left: 600px;
+    background: url(images/sanjiao.png);
+}
+#footer p{
+    line-height: 127px;
+}

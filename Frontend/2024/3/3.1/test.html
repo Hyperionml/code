@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" multiple>
+    <div></div>
+
+    <script>
+        var flie = document.querySelector('input');
+        var div = document.querySelector('div');
+        flie.onchange = function(){
+            var reader = new FileReader();
+            reader.readAsText(this.files[0]);
+            reader.onload = function(){
+                div.innerHTML = this.result;
+            }
+        }
+    </script>
+</body>
+</html>

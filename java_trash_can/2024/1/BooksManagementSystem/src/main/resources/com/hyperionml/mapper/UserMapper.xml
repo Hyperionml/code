@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hyperionml.mapper.UserMapper">
+
+
+    <update id="updateById">
+        update user
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="userName != null and userName != ''">
+                user_name = #{userName},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="root != null">
+                root = #{root},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="list" resultType="com.hyperionml.pojo.User">
+        select * from user
+        <where>
+            <if test="name != null and name != ''">
+                name like concat('%', #{name}, '%')
+            </if>
+            <if test="gender != null">
+                and gender = #{gender}
+            </if>
+        </where>
+    </select>
+
+
+</mapper>

@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    inetutils:
+      ignoredInterfaces: [ 'VMware.*' ]
+      preferred-networks:
+        - 192\.168\.0\..*
+        - 192\.168\.13\..*

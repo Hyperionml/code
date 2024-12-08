@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            border: 1px solid #999;
+            height: 60px;
+            padding: 40px;
+            background: #ddd;
+            flex-flow: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box > div{
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid #999;
+            background: #fff;
+        }
+        .a{
+            order: 2;
+        }
+        .b{
+            order: 3;
+        }
+        .c{
+            order: 1;
+        }
+        .a {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+    </div>
+
+</body>
+</html>

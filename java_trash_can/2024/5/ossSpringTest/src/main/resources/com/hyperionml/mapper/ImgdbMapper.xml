@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hyperionml.mapper.ImgdbMapper">
+    <insert id="massInsert">
+        insert into imgdb.imgtb
+        values
+        <foreach collection="list" item="img" index="index" separator=",">
+            (#{img.name}, #{img.uptime}, #{img.url})
+        </foreach>
+    </insert>
+    <select id="findAllimgs" resultType="com.hyperionml.pojo.img">
+        select * from imgtb
+    </select>
+</mapper>

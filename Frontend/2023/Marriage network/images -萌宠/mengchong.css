@@ -1,0 +1,125 @@
+*{margin: 0; padding: 0; list-style: none; outline: none; border: 0; background: none;}
+body{font-family: "微软雅黑"; font-size: 14px;}
+a:link,a:visited{text-decoration: none; color: #fff; font-size: 16px;}
+
+#h_bg{
+    background: url(top.jpg);
+}
+#head{
+    width: 980px;
+    height: 86px;
+    margin: 0 auto;
+}
+#hr{
+    float: right;
+    padding-top: 12px;
+    padding-right: 80px;
+}
+#nav_bg{
+    width: 980px;
+    height: 74px;
+    margin: 0 auto;
+    background: url(navbg.png)  center no-repeat;
+}
+.nav{
+    width: 980px;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+.nav li{
+    float: left;
+}
+a{
+    display: inline-block;
+    width: 65px;
+    height: 48px;
+    padding: 0 18px;
+    line-height: 48px;
+    clear: right;
+}
+.bg{
+    background: url(pic03.png);
+}
+a:hover{background: url(pic03.png);}
+
+
+#banner{
+    width: 980px;
+    margin: 0 auto;
+}
+#content{
+    width: 980px;
+    height: 900px;
+    background: #F5F5F5;
+    margin: 0 auto;
+
+}
+.h2{
+    margin: 0 auto;
+    width: 980px;
+    height: 31px;
+    background: url(pic01.jpg) left center no-repeat;
+    line-height: 31px;
+    padding-left: 45px;
+    color: #EDF7D8;
+}
+td{
+    height: 50px;
+    color: #89B52A;
+}
+.left{
+    width: 120px;
+    text-align: right;
+}
+table{
+    margin: 0 auto;
+    padding: 29.5px 0;
+}
+.right{
+    width: 320px;
+    height: 28px;
+    border: 1px solid #89B52A;
+    background: #fff;
+}
+.content2{
+    height: 500px;
+    margin: 0 auto;
+    background: #F5F5F5;
+}
+select{
+    width: 171px;
+    border: 1px solid #89B52A;
+    color: #89B52A;
+    background: #fff;
+}
+textarea{
+    width: 380px;
+    border: 1px solid #89B52A;
+    resize: none;
+    font-size: 12px;
+    color: #aaa;
+    padding: 20px;
+    background: #fff;
+}
+.btnn{
+    margin: 0 auto;
+    padding-left: 170px;
+}
+.btn{
+    width: 179px;
+    height: 80px;
+    background: url(pic02.png) right center no-repeat;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+#footer{
+    width: 100%;
+    height: 68px;
+    line-height: 24px;
+    background: #CCCCCC;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}

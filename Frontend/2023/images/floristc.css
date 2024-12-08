@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "楷体";
+    font-size: 16px;
+    color: #bbb;
+}
+.background{
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #ededed;
+}
+.title{
+    width: 980px;
+    margin: 0 auto 7px;
+    text-align: center;
+    font-family: "微软雅黑";
+    color: #555;
+}
+.title b{
+    font-weight: normal;
+    font-size: 30px;
+}
+.title span{
+    font-weight: normal;
+    font-size: 14px;
+}
+.b1{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    color: #bbb;
+}
+.b1 .t1{
+    text-align: left;
+    color: #555;
+}
+.txt1{
+    text-align: center;
+    color: #555;
+    letter-spacing: 2px;
+}
+.txt2{
+    text-align: center;
+    color: #555;
+    letter-spacing: 1px;
+}
+.b2,.b3{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.txt3{
+    text-indent: 30px;
+    color: #555;
+    line-height: 1.7;
+    text-align: left;
+}
+.txt4{
+    font-size: 17px; 
+    font-family: "微软雅黑";
+    color: #555;
+}
+.name{
+    font-family: "微软雅黑";
+    color: #555;
+    text-indent: 2em;
+    text-align: left;
+    line-height: 30px;
+}
+.txt5{
+    font-size: 14px;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 35px;
+    color: #555;
+}

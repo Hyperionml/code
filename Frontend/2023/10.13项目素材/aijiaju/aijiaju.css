@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+}
+body{
+    font-family: "微软雅黑";
+    background: #fdfdfd;
+}
+
+#bg{
+    width: 1200px;
+    height: 617px;
+    background: url(bg.png) no-repeat;
+    margin: 0 auto;
+}
+.nav{
+    width: 850px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 50px 0 0 150px;
+    background: url(logo.png) left center no-repeat;
+}
+.nav span{
+    color: #685649;
+    font-size: 16px;
+    padding: 0 30px;
+}
+.search{
+    float: right;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100px;
+    color: #aaa;
+    font-size: 14px;
+    background: #fff url(f.png) no-repeat 10px center;
+}
+
+#news{
+    width: 1200px;
+    height: 455px;
+    background: url(dongtai.jpg) center top no-repeat;
+    margin: 18px auto;
+    padding-top: 120px;
+}
+.news_con{
+    float: left;
+    margin-left: 70px;
+}
+.one{
+    width: 284px;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.two{
+    width: 284px;
+    height: 70px;
+    line-height: 20px;
+    padding: 10px 0 0 10px;
+    font-size: 12px;
+    color: #bbb;
+}
+.shadow{
+    width: 294px;
+    height: 5px;
+    background: url(yinying.jpg) no-repeat;
+}
+
+#exhibition{
+    width: 1200px;
+    background-image: radial-gradient(ellipse at center, #fff, #d6e4ed);
+    margin: 50px auto;
+}
+.tittle{
+    width: 636px;
+    height: 150px;
+    margin: 0px auto;
+    background: url(shenghuo.png) no-repeat center center;
+}
+.pic{
+    width: 1000px;
+    height: 360px;
+    margin: 0 auto;
+}
+.pic img{
+    margin-left: 45px;
+}
+
+#footer{
+    width: 1200px;
+    height: 80px;
+    background: url(footer_bg.jpg) repeat-x;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.tree{
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        .box{
+            width: 320px;
+            height: 320px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .tap{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            margin: -100px 0 0 -100px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        .click{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            margin: -150px 0 0 -150px;
+            background-color: pink;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <script src="https://lib.baomitu.com/fastclick/1.0.6/fastclick.min.js"></script>
+    <div class="box">
+        <div class="click">click</div>
+        <div class="tap">tap</div>
+    </div>
+
+    <script src="https://lib.baomitu.com/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+        var tap = document.getElementsByClassName('tap')[0];
+        var click = document.getElementsByClassName('click')[0];
+
+        tap.addEventListener("touchstart", () => {
+            console.log('我是touch事件');
+            tap.style.visibility = "hidden";
+        })
+        click.onclick = () => {
+            console.log('我是click事件');
+        }
+        if('addEventListener' in document){
+            document.addEventListener('DOMContentLoaded', () => {
+                FastClick.attach(document.body);
+            }, false)
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,4 @@
+启动虚拟机3个es集群
+启动nacos（port：8848）
+启动sentinel
+启动服务

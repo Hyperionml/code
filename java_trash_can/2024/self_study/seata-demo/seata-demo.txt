@@ -1,0 +1,4 @@
+启动nacos（port：8848）
+启动seata
+启动服务
+

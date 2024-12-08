@@ -1,0 +1,13 @@
+UserLocalName: gdupt
+server:
+  port: 10011
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/imgdb
+    username: root
+    password: Herobrine717hak.maimaiDXisNiceW6
+logging:
+  level:
+    sql: debug
+

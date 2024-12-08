@@ -1,0 +1,55 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.body{
+    width: 980px;
+    text-align: center;
+}
+.img1{
+    background-color: #525252;
+}
+.txt1{
+    line-height: 45px;
+    text-align: left;
+    font-family: 楷体;
+}
+.txt2,.txt3{
+    text-align: center;
+    color: #7c251c;
+    font-family: 楷体;
+    font-weight: 800;
+}
+.txt2{
+    font-size: 35px;
+    letter-spacing: 6px;
+}
+.txt4{
+    font-family: 楷体;
+    font-size: 20px;
+    text-align: left;
+    text-indent: 2em;
+    font-weight: 800;
+    line-height: 35px;
+}
+.t1,.t3{
+    color: #7c251c;
+    font-size: 50px;
+}
+.t2{
+    color: #7c251c;
+}
+.t3{
+    font-size: 25px;
+    text-decoration-line: underline;
+}
+.t4{
+    background-color: yellow;
+}
+.last{
+    background-color: #525252;
+}
+.txt5{
+    color: #fff;
+    line-height: 90px;
+}

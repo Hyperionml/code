@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            width: 100%;
+            overflow: hidden;
+            visibility: hidden;
+            position: relative;
+        }
+        .bannerImg{
+            overflow: hidden;
+            position: relative;
+        }
+        .bannerImg > li{
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+        .bannerImg > li img{
+            width: 100%;
+            display: block;
+        }
+    </style>
+        
+</head>
+<body>
+    <script src="./实验3素材/swipe.js"></script>
+
+    <div class="banner">
+        <ul class="bannerImg clearfix">
+            <li>
+                <a href="javascript:;">
+                    <img src="./实验3素材/banner/1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./实验3素材/banner/2.jpg" alt="">
+                </a>
+            </li><li>
+                <a href="javascript:;">
+                    <img src="./实验3素材/banner/3.jpg" alt="">
+                </a>
+            </li><li>
+                <a href="javascript:;">
+                    <img src="./实验3素材/banner/4.jpg" alt="">
+                </a>
+            </li><li>
+                <a href="javascript:;">
+                    <img src="./实验3素材/banner/5.jpg" alt="">
+                </a>
+            </li><li>
+                <a href="javascript:;">
+                    <img src="./实验3素材/banner/6.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <input type="button" value="上一张" id="prev">
+    <input type="button" value="下一张" id="next">              
+              
+
+    <script>
+        window.mySwipe = Swipe(document.querySelector('.banner'), {
+            auto: 2000
+        });
+        document.getElementById('prev').onclick = () => {
+            window.mySwipe.prev();
+        }
+        document.getElementById('next').onclick = () => {
+            window.mySwipe.next();
+        }
+    </script>
+    
+</body>
+</html>
